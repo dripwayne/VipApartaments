@@ -1,0 +1,21 @@
+﻿@model IEnumerable<VipApartaments.Models.User>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.UserName</td>
+                        <td>@user.Pass</td>
+                    </tr>
+                }
+            </tbody>
+        </table>x
+    </div>
